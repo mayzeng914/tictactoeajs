@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="tttapp">
+<head>
+	<title>Tic Tac Toe</title>
+
+	<link rel="stylesheet" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+
+	<!-- Firebase -->
+<script src="https://cdn.firebase.com/js/client/1.0.17/firebase.js"></script>
+<!-- AngularJS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
+	<script src="third_plan.js"></script>
+	
+	<!-- AngularFire Library -->
+<script src="https://cdn.firebase.com/libs/angularfire/0.7.1/angularfire.min.js"></script>
+
+</head>
+<body class="clearfix">
+	<header class="clearfix">Tic Tac Toe</header>
+	<div class="clearfix" id="container" ng-controller="tttController" ng-model="boxesContainer">
+		<div id="data" class="clearfix">
+			<button id="playAgain" ng-click="clickToReloadBoard()">Play again?</button>
+		</div>
+		<div id="data2" class="clearfix">
+			<button id="playAgain2" ng-click="clickToReloadPage()">Wanna play with someone else?</button>
+		</div>
+		<div id="player1">{{ player1Status }}</div>
+		<div id="player2">{{ player2Status }}</div>
+		<div><p id="tiebar">{{ tie_count }}</p></div>
+		<div class="board clearfix">
+		    <div id="game" ng-repeat="box in boxesContainer.boxList" ng-click="clickIt(box)" ng-class="{pink: box.odd, blue: box.even}"></div>{{box}}</div>
+		    <div id="turn" ng-class="{textpink: turncolor.colorpink, textblue: turncolor.colorblue}">{{ turn_status }}</div>
+		</div>
+	<div><img class="background" src="heart.jpg"/></div>
+	<header></header>
+	
+</body>
+</html>

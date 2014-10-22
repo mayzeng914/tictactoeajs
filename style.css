@@ -1,0 +1,179 @@
+body {
+	background-color: #FEF49B;
+	margin: 0;
+	width: 700px;
+	height: 7px;
+	background-repeat: no-repeat;
+}
+header {
+	font-family: 'Gloria Hallelujah', cursive;
+    font-size: 80px;
+    float: left;
+    margin-left: 80%;
+    width: 800px;
+}
+.background {
+	float: left;
+    margin-left: 158%;
+    margin-top: -15%;
+    height: 300px;
+}
+#container {
+    height: 300px;
+    width: 350px;
+    border-collapse: collapse;
+    margin: 0;
+    margin-left: 90%;
+}
+
+/* Clearfix 
+================= */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+
+.board {
+    margin-top: 16%;
+}
+#player1 {
+    float:left;
+    margin-left: -108%;
+    margin-top: 24%;
+    background-color: pink;
+    border-radius: 25px;
+    border: 0;
+    text-shadow: 1px -1px;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: white;
+    font-size: 24px;
+    padding: 11px;
+}
+#player1:hover {
+    background-color: white;
+    color: pink;
+}
+#player2 {
+    float:left;
+    margin-left: -108%;
+    margin-top: 49%;
+    background-color: lightblue;
+    border-radius: 25px;
+    border: 0;
+    text-shadow: 1px -1px;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: white;
+    font-size: 24px;
+    padding: 11px;
+}
+#player2:hover {
+    background-color: white;
+    color: lightblue;
+}
+#tiebar {
+    float:left;
+    margin-left: -108%;
+    margin-top: 74%;
+    background-color: grey;
+    border-radius: 25px;
+    border: 0;
+    text-shadow: 1px -1px;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: white;
+    font-size: 24px;
+    padding: 11px;
+}
+#tiebar:hover {
+    background-color: white;
+    color: grey;
+}
+#data {
+    float: right;
+    margin-right: -73%;
+    margin-top: 23%;
+}
+#data2 {
+    float: right;
+    margin-right: -126%;
+    margin-top: 43%;
+}
+#data:hover {
+    margin-top: 22%;
+}
+#data2:hover {
+    margin-top: 42%;
+}
+#playAgain {
+    background-color: #FEF49B;
+    border-radius: 25px;
+    border: 0;
+    text-shadow: 1px -1px;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #EB1B28;
+    font-size: 19px;
+    padding: 11px;
+}
+#playAgain2 {
+    background-color: #FEF49B;
+    border-radius: 25px;
+    border: 0;
+    text-shadow: 1px -1px;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #EB1B28;
+    font-size: 19px;
+    padding: 11px;
+}
+#playAgain:hover {
+    color: #EB1B28;
+    filter: alpha(opacity=20);
+}
+#playAgain2:hover {
+    color: #EB1B28;
+    filter: alpha(opacity=20);
+}
+#turn {
+    background-color: #FEF49B;
+    color: grey;
+    text-shadow: 1px -1px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 27px;
+    margin-left: 23%;
+    margin-top: 10%;
+}
+#turn:hover {
+    margin-top: 11%;
+}
+.textpink {
+    color: pink;
+}
+.textblue {
+    color: lightblue;
+}
+#game {
+    /*background: white;*/
+    height: 100px;
+    width: 100px;
+    border: 2px;
+    float: left;
+    display: inline-block;
+    border-collapse: collapse;
+    margin: 1%;
+    padding: 0;
+    box-shadow: 6px 8px 32px lightgrey;
+    border-radius: 25px;
+}
+#game.ng-scope:hover {
+    background: lightgrey;
+}
+
+.pink {
+    background: pink;
+}
+
+.blue {
+    background: lightblue;
+}
